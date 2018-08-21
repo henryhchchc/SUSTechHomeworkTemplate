@@ -30,8 +30,6 @@
 \rhead{\@author \ \@authorsid}
 \cfoot{Page \thepage\space of \pageref{LastPage}}	
 
-\usepackage{fontspec}
-
 \newcommand{\mktitle}{\newpage
 	{
 		\huge \@subject \ \ 
