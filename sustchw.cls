@@ -8,8 +8,11 @@
 \ProvidesClass{sustchw}[2018/02/14 SUSTC Homework]
 \PassOptionsToClass{twocolumn}{article}
 \usepackage[a4paper, margin={0.4in, 0.8in}]{geometry}
+\usepackage{fontspec}
+\setmainfont{Noto Serif}
+\setsansfont{Noto Sans}
+\setmonofont{Source Code Pro}
 \usepackage{xeCJK}
-
 \setCJKmainfont{Noto Sans CJK SC}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
@@ -31,7 +34,7 @@
 
 \newcommand{\mktitle}{\newpage
 	{
-		\LARGE \textbf{\@subject}
+		\huge \@subject \ \ 
 		\Large \@title
 	}\\
 	\par
