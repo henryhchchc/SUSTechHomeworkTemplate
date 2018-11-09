@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 \LoadClass{article}
 \RequirePackage{xeCJK}
 \RequirePackage{lastpage}
@@ -13,14 +14,12 @@
 \usepackage{fontspec}
 \setmainfont{Noto Serif}
 \setsansfont{Noto Sans}
-\setmonofont{Source Code Pro}
+\setmonofont{Fira Code}
 
 \usepackage{xeCJK}
 \setCJKmainfont{Noto Sans CJK SC}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
-
-\usepackage{titlesec}
 
 \pagestyle{fancy}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -39,16 +38,17 @@
 \cfoot{Page \thepage\space of \pageref{LastPage}}	
 
 \newcommand{\mktitle}{\newpage
+	\noindent
 	{
 		\huge \@subject \ \ 
 		\Large \@title
 	}\\
 	\par
+	\noindent
 	{
 		\normalsize \@author \ \@authorsid
 	}\\
 	\noindent\rule{\textwidth}{0.4pt}\\
-	%\par
 }
 
 \if@twocolumn
